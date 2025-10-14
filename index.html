@@ -1,7 +1,41 @@
-<h1>Using jQuery Selectors and Events</h1>
-<!--!!![INTERACTIVE THING]!!!-->
-<!--!!![INTERACTIVE THING]!!!-->
-<!--!!![INTERACTIVE THING]!!!-->
-<!-- Use jQuery to select each element and apply a different event.
-These may include click, double-click, hover, or keypress. Each interaction should result in a visible change on the page, such as changing the text, hiding the element, or changing its style.
-You may use inline styles or create your own CSS class to apply changes.-->
+<!DOCTYPE HTML>
+<html>
+ 
+<head>
+<title></title>
+	<script src="resources/jquery-3.7.1.js"></script>	
+	<script>
+	$(document).ready(fuction(){})
+	</script>
+	<script>
+ 	$(document).ready(function() {
+        	$('#change-heading-color').click(function() {
+                	$('#heading').css('color', 'maroon');
+        	});
+   	 });
+	</script>
+	<script>
+ 	$(document).ready(function() {
+        	$('#change-heading-text').click(function() {
+                	$('#heading').text('This text has changed now.');
+        	});
+   	 });
+	</script>
+	<script>
+        $(document).ready(function() {
+        	$("#hide-heading").dblclick(function() {
+                	$("h1").hide();
+		});
+        });
+	</script>
+</head>
+
+<body>
+	<h1 id="heading">Using jQuery Selectors and Events</h1>
+	
+	<button id="change-heading-color">Click to change the color of the text above</button>
+	<button id="change-heading-text">Hover over this to change the text above</button>
+	<button id="hide-heading">Double click to hide the text above</button>
+</body>
+
+</html>
