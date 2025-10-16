@@ -17,7 +17,7 @@
 	<script>
  	$(document).ready(function() {
         	$('#change-heading-text').click(function() {
-                	$('#heading').text('This text has changed now.');
+                	$('#heading').text('This Text Has Now Changed to a Different Text.');
         	});
    	 });
 	</script>
@@ -36,6 +36,17 @@
 	<button id="change-heading-color">Click to change the color of the text above</button>
 	<button id="change-heading-text">Click to change the text above</button>
 	<button id="hide-heading">Double click to hide the text above</button>
+	<!--I am not entirely sure if the effects were suppoosed to alter the heading or the buttons themselves (or something else).
+	I had them alter the heading.-->
+	<dl>
+		<dt>Changing the Color</dt>
+		<dd>When clicked, it will change the color of the specified element (which in this case is the heading).</dd>
+<br/>
+		<dt>Changing the Text</dt>
+		<dd>When clicked, it will change the text of the specified element to a different line of text.</dd>
+<br/>
+		<dt>Hiding the Heading</dt>
+		<dd>When clicked (double clicked in this instance), it will hide the specified element.</dd>
+	</dl>
 </body>
-
 </html>
